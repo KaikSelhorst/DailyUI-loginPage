@@ -1,0 +1,205 @@
+:root {
+  --firstColor: rgba(133, 138, 227, 0.3);
+  --secondColor: #c6c6c6;
+  --thirdColor: #2b6cb0;
+  --FourthColor: #858ae3;
+  --fifthColor: #1a202c;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* Background */
+  background-image: url(./assets/Rectangle\ 21.svg);
+  background-repeat: no-repeat;
+  background-position: center right -100px;
+}
+
+.conteiner-principal {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* Background */
+  background-image: url(./assets/foto.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right -70px;
+
+  /* Flex */
+  display: flex;
+  align-items: center;
+}
+.conteiner-form {
+  transition: 0.25s;
+  margin-left: 12.5%;
+}
+.conteiner-form .form-title span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.conteiner-form .form-title h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+}
+
+.conteiner-form .form-input-email {
+  margin-top: 50px;
+}
+.conteiner-form .form-input-email label,
+.conteiner-form .form-input-senha label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+.conteiner-form .form-input-email input,
+.conteiner-form .form-input-senha input {
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 50px;
+  width: 365px;
+  color: var(--secondColor);
+}
+
+.conteiner-form .form-input-email input:focus,
+.conteiner-form .form-input-senha input:focus {
+  border-color: transparent;
+  outline: 2px solid var(--firstColor);
+}
+
+.conteiner-form .form-input-senha label {
+  margin-top: 12px;
+}
+
+.conteiner-form .form-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 18px 0;
+  font-size: 1.4rem;
+}
+
+.conteiner-form .form-remember .conteiner-remember {
+  display: flex;
+  align-items: center;
+}
+
+.conteiner-form .form-remember .conteiner-remember input {
+  display: none;
+}
+.conteiner-form .form-remember .conteiner-remember label {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.conteiner-form .form-remember .conteiner-remember label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border: 1px solid var(--firstColor);
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.conteiner-form
+  .form-remember
+  .conteiner-remember
+  input:checked
+  + label::before {
+  background-color: var(--FourthColor);
+}
+.conteiner-form .form-remember a {
+  color: var(--thirdColor);
+}
+
+.conteiner-form .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conteiner-form .buttons button {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1.9rem;
+  cursor: pointer;
+}
+.conteiner-form .buttons .button-entrar {
+  background-color: var(--FourthColor);
+}
+.conteiner-form .buttons .login-for-google button {
+  background-color: var(--fifthColor);
+}
+.conteiner-form .buttons .login-for-google {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.conteiner-form .buttons .login-for-google .google-icon {
+  position: absolute;
+  height: 20px;
+  top: 27%;
+  left: 30px;
+  width: 20px;
+}
+
+.conteiner-form > p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+.conteiner-form > p > a {
+  color: var(--thirdColor);
+}
+
+@media (max-width: 1175px) {
+  .conteiner-form {
+    margin-left: 6%;
+  }
+}
+@media (max-width: 1050px) {
+  .conteiner-form {
+    margin-left: 1%;
+  }
+  body {
+    background-position: center right -150px;
+  }
+  .conteiner-principal {
+    background-position: bottom right -120px;
+  }
+}
+@media (max-width: 1050px) {
+  .conteiner-form {
+    margin: 0 auto;
+  }
+  body {
+    background-image: none;
+  }
+  .conteiner-principal {
+    background-image: none;
+  }
+}
