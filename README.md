@@ -1,14 +1,17 @@
 # DailyUI-loginPage
 
-Tela De Login Minimalista
+### Tela De Login Minimalista
 
-### Línguagens Utilizadas
+#### Línguagens Utilizadas
 
-- Html5
-- Css3
+- HTML5
+- CSS3
 
-### Hospedagem
+#### Ferramentas De Design
+
+- FIGMA
+
+#### Hospedagem Do Projeto
 
 - Vercel
-=> [Site-Online](https://loginpage-dailyui.vercel.app/)
-
+- [Online](https://loginpage-dailyui-f7md8ob2g-kaikselhorst.vercel.app/)
