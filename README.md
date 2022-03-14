@@ -10,6 +10,7 @@
 #### Ferramentas De Design
 
 - FIGMA
+- [Design](https://www.figma.com/file/PYiS0dcPvj2gDDOKtpZfVi/dailyUI?node-id=0%3A1)
 
 #### Hospedagem Do Projeto
 
